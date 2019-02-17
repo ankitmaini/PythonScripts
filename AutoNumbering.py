@@ -16,14 +16,11 @@ text = pyperclip.paste()
 
 # Splitting the text on each line
 lines = text.split('\n')                      # using the .split() method with '\n' to split the 'text' on each new line
-for line in range(len(lines):
-  lines[i] = str(i + 1) + '. '  + lines[i]    # adds numbers (MODIFY CODE HERE to change numbers to something else)
+for line in range(len(lines)):
+                  lines[line] = str(line + 1) + '. '  + lines[line]    # adds numbers (MODIFY CODE HERE to change numbers to something else)
  
 # Joining the lines
 text = '\n'.join(lines)
 
 # Copy back the text to clipboard so that you can paste it back
 pyperclip.copy(text)
-  
-
-
